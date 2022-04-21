@@ -1,0 +1,15 @@
+.connect {
+    background-image: url(../img/fon-footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 448px;
+}
+
+.connect__list {
+    display: flex;
+}
+
+.connect__item-subscribe {
+    text-transform: uppercase;
+}

@@ -178,10 +178,6 @@ img {
   position: relative;
 }
 
-.header__logo-loup {
-  display: flex;
-}
-
 .header__logo {
   margin: 0 41px 0 0;
 }
@@ -206,11 +202,7 @@ img {
   position: absolute;
 }
 
-.header__botton:hover .header__nav {
-  display: block;
-}
-
-.header__nav:hover {
+.header__botton:hover + .header__nav {
   display: block;
 }
 
@@ -230,7 +222,6 @@ img {
   font-weight: 900;
   font-size: 48px;
   line-height: 58px;
-  text-transform: uppercase;
 }
 
 .brand__subtitle {
@@ -252,7 +243,6 @@ img {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  text-transform: uppercase;
 }
 
 .sales__item {
@@ -260,10 +250,6 @@ img {
   box-sizing: border-box;
   width: 360px;
   min-height: 260px;
-}
-
-.sales__item-text {
-  color: #F16D7F;
 }
 
 .sales__item--shoes {
@@ -276,7 +262,6 @@ img {
   line-height: 36px;
   color: #222222;
   text-align: center;
-  text-transform: capitalize;
 }
 
 .catalog__text {
@@ -302,16 +287,14 @@ img {
 }
 
 .catalog__item-title {
-  padding: 25px 0 12px 16px;
+  padding: 25px 0 12px;
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
   color: #000000;
-  text-transform: uppercase;
 }
 
 .catalog__item-text {
-  padding: 0 28px 0 16px;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -319,7 +302,7 @@ img {
 }
 
 .catalog__item-text-price {
-  padding: 18px 0 20px 16px;
+  padding: 18px 0 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -339,7 +322,6 @@ img {
   border: 1px solid #FF6A6A;
   padding: 14px 38px;
   text-decoration: none;
-  text-transform: capitalize;
 }
 
 .catalog__link-button:hover {
@@ -354,15 +336,10 @@ img {
 .information__list {
   display: flex;
   min-height: 341px;
-  align-items: center;
-}
-
-.information__item {
-  justify-content: center;
 }
 
 .information__item-img {
-  text-align: center;
+  align-self: center;
 }
 
 .information__item-title {
@@ -393,29 +370,11 @@ img {
   display: flex;
 }
 
-.connect__item-subscribe {
-  text-transform: uppercase;
-}
-
 .rights {
   background-color: #222222;
-  min-height: 79px;
-}
-
-.rights__bloc {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .rights__list {
   display: flex;
-}
-
-.rights__text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: #FBFBFB;
 }
 /*# sourceMappingURL=style.css.map */
