@@ -1,26 +1,72 @@
 .sales {
     margin: 64px 0 97px;
+
+    .sales__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-transform: uppercase;
+    }
+
+    .sales__item {
+        padding: 20px;
+        box-sizing: border-box;
+        width: 360px;
+        min-height: 260px;
+        text-align: center;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .sales__item-text {
+        @include font(16px, 19px, 400px);
+        color: #FFFFFF;
+        position: absolute;
+        top: 125px;
+        left: 120px;
+        text-align: center;
+        width: 154px;
+    }
+
+    .sales__item-text-pink {
+        @include font(24px, 28px, 400px);
+        color: $dark-pink;
+    }
+
+    .sales__item--shoes {
+        width: 100%;
+
+    }
+
+    .sales__item-text--shoes {
+        @include font(16px, 19px, 400px);
+        color: white;
+        position: absolute;
+        text-align: center;
+        width: 160px;
+        top: 89px;
+        left: 490px;
+    }
 }
 
+@media (max-width: $taslet-width) {
+    .sales__item {
+        width: 232px;
+        min-height: 167px;
+    }
 
-.sales__list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    text-transform: uppercase;
+    .sales__item--shoes {
+        height: 116px;
+    }
 }
 
-.sales__item {
-    padding: 20px;
-    box-sizing: border-box;
-    width: 360px;
-    min-height: 260px;
-}
+@media (max-width: $mobile-width) {
+    .sales__item {
+        width: 343px;
+        min-height: 247px;
+    }
 
-.sales__item-text {
-    color: $dark-pink;
-}
-
-.sales__item--shoes {
-    width: 100%;
+    .sales__item--shoes {
+        min-height: 111px;
+    }
 }

@@ -1,51 +1,85 @@
 .header {
     background-color: $black-bkg;
+
+    .header__wrp {
+        display: flex;
+        justify-content: space-between;
+        min-height: 75px;
+        align-items: center;
+        position: relative;
+    }
+
+    .header__logo-loup {
+        display: flex;
+    }
+
+    .header__logo {
+        margin: 0 41px 0 0;
+    }
+
+    .header__search {
+        position: relative;
+    }
+
+    .header__search-button {
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        top: 1px;
+        fill: white;
+        margin: 5px 0 0 40px;
+        cursor: pointer;
+    }
+
+    .header__search-input {
+        border: none;
+        position: absolute;
+        outline: 1px solid white;
+        background-color: transparent;
+        height: 30px;
+        margin: 3px 0 0 8px;
+        color: white;
+        top: 3px;
+        left: 40px;
+        outline: none;
+        padding: 0 0 0 40px;
+    }
+
+    .header__list {
+        display: flex;
+    }
+
+    .header__item {
+        margin: 0 0 0 34px;
+    }
+
+    .header__botton {
+        border: none;
+        background-color: transparent;
+        align-items: center;
+    }
+
+    .header__nav {
+        display: none;
+        position: absolute;
+        width: 232px;
+        top: 100px;
+        right: 0;
+        background: white;
+    }
+
+    .header__botton:hover+.header__nav,
+    .header__botton:focus+.header__nav {
+        display: block;
+    }
+
+    .header__nav:hover {
+        display: block;
+    }
 }
 
-.header__wrp {
-    display: flex;
-    justify-content: space-between;
-    min-height: 75px;
-    align-items: center;
-    position: relative;
-}
-
-.header__logo-loup {
-    display: flex;
-}
-
-.header__logo {
-    margin: 0 41px 0 0;
-}
-
-.header__list {
-    display: flex;
-}
-
-.header__item {
-    margin: 0 0 0 34px;
-}
-
-.header__botton {
-    border: none;
-    background-color: transparent;
-    align-items: center;
-}
-
-.header__nav {
-    display: none;
-    position: absolute;
-    width: 232px;
-    top: 100px;
-    right: 0;
-    background: white;
-}
-
-.header__botton:hover+.header__nav,
-.header__botton:focus+.header__nav {
-    display: block;
-}
-
-.header__nav:hover {
-    display: block;
+@media (max-width: $mobile-width) {
+    .header__link {
+        display: none;
+    }
 }
