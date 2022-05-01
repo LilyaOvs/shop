@@ -1,22 +1,19 @@
 .rights {
     background-color: $black-bkg;
-    min-height: 79px;
-}
 
-.rights__bloc {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    .rights__bloc {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 79px;
+    }
 
-.rights__list {
-    display: flex;
-}
+    .rights__list {
+        display: flex;
+    }
 
-.rights__text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FBFBFB;
-
+    .rights__text {
+        @include font (16px, 19px, 400px);
+        color: #FBFBFB;
+    }
 }
