@@ -13,8 +13,16 @@ img {
 }
 
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
+
+    @include tablet {
+        max-width: 75%;
+    }
+
+    @include mobile {
+        max-width: 91.4%;
+    }
 }
 
 .visually-hidden {
@@ -28,16 +36,4 @@ img {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-}
-
-@media (max-width: $taslet-width) {
-    .container {
-        width: 734px;
-    }
-}
-
-@media (max-width: $mobile-width) {
-    .container {
-        width: 343px;
-    }
 }

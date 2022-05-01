@@ -6,7 +6,6 @@
         justify-content: space-between;
         min-height: 75px;
         align-items: center;
-        position: relative;
     }
 
     .header__logo-loup {
@@ -47,16 +46,24 @@
 
     .header__list {
         display: flex;
+        align-items: center;
     }
 
-    .header__item {
-        margin: 0 0 0 34px;
-    }
-
-    .header__botton {
+    .header__burger {
         border: none;
         background-color: transparent;
-        align-items: center;
+    }
+
+    .header__icon {
+        fill: white;
+    }
+
+    .header__link {
+        margin: 0 0 0 34px;
+
+        @include mobile {
+            display: none;
+        }
     }
 
     .header__nav {
@@ -78,8 +85,8 @@
     }
 }
 
-@media (max-width: $mobile-width) {
-    .header__link {
-        display: none;
-    }
-}
+// @media (max-width: $mobile-width) {
+//     .header__link {
+//         display: none;
+//     }
+// }
