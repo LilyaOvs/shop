@@ -6,14 +6,25 @@
         justify-content: space-between;
         align-items: center;
         min-height: 79px;
+
+        @include mobile-min {
+            flex-direction: column-reverse;
+            padding: 43px 0 9px;
+        }
+    }
+
+    .rights__text {
+        @include font (16px, 19px, 400px);
+        color: #FBFBFB;
+
+        @include mobile-min {
+            margin: 40px 0 0;
+        }
     }
 
     .rights__list {
         display: flex;
     }
 
-    .rights__text {
-        @include font (16px, 19px, 400px);
-        color: #FBFBFB;
-    }
+
 }

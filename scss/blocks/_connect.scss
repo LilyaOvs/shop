@@ -1,8 +1,8 @@
 .connect {
     background-image: url(../img/fon-footer.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-size: cover;
     width: 100%;
+    min-height: 448px;
 
 
     .connect__wrp {
@@ -10,12 +10,25 @@
         align-items: center;
         justify-content: space-between;
         min-height: 448px;
-        text-align: center;
+
+        @include mobile {
+            flex-direction: column;
+            padding: 53px 0 140px;
+        }
 
         .connect__bloc {
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: 40%;
+
+            @include mobile {
+                width: 66%;
+            }
+
+            @include mobile-min {
+                width: 100%;
+            }
         }
 
         .connect__img {
@@ -25,7 +38,6 @@
         }
 
         .connect__text {
-            width: 396px;
             @include font (20px, 24px, 400px);
             text-align: center;
             color: #222224;
@@ -35,12 +47,28 @@
             font-style: oblique;
         }
 
+        .connect__input {
+            padding: 0 0 0 20px;
+
+            @include mobile-min {
+                width: 100%;
+            }
+        }
+
         .connect__subscribe {
             text-transform: uppercase;
             @include font (18px, 167.2%, 700px);
             text-align: center;
             color: #222224;
             margin: 0 0 32px;
+
+            @include mobile {
+                margin: 0 0 27px;
+            }
+
+            @include mobile-min {
+                margin: 0 0 22px;
+            }
         }
 
         .connect__subscribe-bold {
@@ -56,10 +84,21 @@
             border-radius: 30px 0 0 30px;
             border: none;
             padding: 0 0 0 22px;
+
+            @include mobile-min {
+                width: 100%;
+            }
+
         }
 
         .connect__subscribe-form {
             display: flex;
+            justify-content: center;
+
+            @include mobile-min {
+
+                width: 100%;
+            }
         }
 
         .connect__subscribe-button {
@@ -74,12 +113,16 @@
             border: none;
             padding: 0 0 0 17px;
             border-radius: 0 30px 30px 0;
-        }
 
-        @media (max-width: $taslet-width) {
-            .connect__wrp {
-                flex-direction: column;
+            @include mobile-min {
+                padding: 0 5px 0;
             }
         }
+
+        // @media (max-width: $tablet-width) {
+        //     .connect__wrp {
+        //         flex-direction: column;
+        //     }
+        // }
     }
 }
