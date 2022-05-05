@@ -1,0 +1,34 @@
+.woomen {
+    .woomen-wrp {
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+        left: 14.41%;
+        right: 14.34%;
+        top: 32.26%;
+        bottom: 47.05%;
+        border: 1px solid #EAEAEA;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .woomen__title-pink {
+        @include font(14px, 17px, 300px);
+        color: $dark-pink;
+        text-transform: uppercase;
+    }
+
+    .woomen__title-black {
+        @include font(18px, 22px, 300px);
+        color: #4D4D4D;
+        text-transform: uppercase;
+    }
+
+    .woomen__text {
+        @include font(14px, 17px, 300px);
+        color: #5E5E5E;
+        width: 34.7%;
+        text-align: center;
+    }
+
+}

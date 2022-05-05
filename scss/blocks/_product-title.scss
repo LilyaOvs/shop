@@ -1,0 +1,34 @@
+.product-title {
+    background-color: $light-pink;
+    height: 148px;
+
+    .product-title-wrp {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 148px;
+    }
+
+    .product-title__title {
+        @include font(24px, 29px, 400px);
+        color: $dark-pink;
+        text-transform: uppercase;
+    }
+
+    .product-title__list {
+        display: flex;
+        list-style-type: none;
+    }
+
+    .product-title__link {
+        text-transform: uppercase;
+        text-decoration: none;
+        @include font(14px, 17px, 300px);
+        color: #636363;
+    }
+
+    .product-title__link-pink {
+        color: $dark-pink;
+    }
+
+}
