@@ -2,6 +2,7 @@
 @import './mixins';
 @import './reset';
 @import './general';
+@import './font';
 
 @import './blocks/header';
 @import './blocks/nav-sub-item';
@@ -14,3 +15,6 @@
 @import './blocks/product-title';
 @import './blocks/carousel';
 @import './blocks/woomen';
+@import './blocks/thing';
+@import './blocks/nav-list-item';
+@import './blocks/page';

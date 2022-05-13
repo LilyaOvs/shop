@@ -7,17 +7,30 @@
         justify-content: space-between;
         align-items: center;
         height: 148px;
+
+        @include mobile-min {
+            flex-direction: column;
+            justify-content: center;
+        }
     }
 
     .product-title__title {
         @include font(24px, 29px, 400px);
         color: $dark-pink;
         text-transform: uppercase;
+
+        @include mobile-min {
+            margin: 0 0 32px;
+        }
     }
 
     .product-title__list {
         display: flex;
         list-style-type: none;
+
+        @include mobile-min {
+            margin: 0 0 20px;
+        }
     }
 
     .product-title__link {
