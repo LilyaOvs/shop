@@ -16,6 +16,7 @@
     .rights__text {
         @include font (16px, 19px, 400px);
         color: #FBFBFB;
+        margin: 0 0 0;
 
         @include mobile-min {
             margin: 40px 0 0;
@@ -24,6 +25,7 @@
 
     .rights__list {
         display: flex;
+        margin: 0 0 0;
     }
 
 

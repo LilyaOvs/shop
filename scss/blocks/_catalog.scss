@@ -1,4 +1,9 @@
+.catalog-margin {
+    margin: 0 0 128px;
+}
+
 .catalog {
+
     .catalog__title {
         @include font(30px, 36px, 400px);
         color: #222222;
@@ -42,6 +47,12 @@
         }
     }
 
+    .catalog__item-none {
+        @include mobile {
+            display: none;
+        }
+    }
+
     .catalog__item-img {
         width: 100%;
     }
@@ -76,6 +87,7 @@
 
     .catalog__item-button-img {
         margin: 0 11px 0 0;
+        fill: white;
     }
 
     .catalog__item-overlay-button:hover .catalog__item-overlay,

@@ -1,34 +1,143 @@
 .woomen {
+    text-align: center;
+    border: 1px solid #E1E1E1;
+    position: absolute;
+    top: 900px;
+    background-color: #FFFFFF;
+    width: 72%;
+    left: 14%;
+
+    @include mobile {
+        width: 100%;
+        left: 0%;
+    }
+
+    @include mobile-mid {
+        top: 800px;
+    }
+
+    @include mobile-min {
+        top: 680px;
+    }
+
+
     .woomen-wrp {
-        text-align: center;
-        width: 50%;
+        width: 55%;
         margin: 0 auto;
-        left: 14.41%;
-        right: 14.34%;
-        top: 32.26%;
-        bottom: 47.05%;
-        border: 1px solid #EAEAEA;
-        display: flex;
-        flex-direction: column;
+
+        @include tablet-mid-width {
+            width: 72%;
+        }
+
+        @include mobile {
+            width: 72%;
+
+        }
+
+        @include mobile-mid {
+            width: 90%;
+        }
+
+        @include mobile-min {
+            width: 100%;
+            padding: 0 4px 0 4px;
+        }
+
+        .woomen__title-pink {
+            @include font(14px, 17px, 300px);
+            color: $dark-pink;
+            text-transform: uppercase;
+            position: relative;
+            margin: 64px 0 27px;
+        }
+
+        .woomen__title-pink::after {
+            content: "";
+            position: absolute;
+            background-color: $dark-pink;
+            top: 29px;
+            left: 45%;
+            right: 45%;
+            bottom: -15px;
+        }
+
+        .woomen__title-black {
+            @include font(18px, 22px, 300px);
+            color: #4D4D4D;
+            text-transform: uppercase;
+        }
+
+        .woomen__text {
+            @include font(14px, 17px, 300px);
+            color: #5E5E5E;
+            text-align: center;
+            margin: 48px 0 32px;
+        }
+
+        .woomen__text-pink {
+            @include font(24px, 29px, 300);
+            color: $dark-pink;
+        }
+
+        .line {
+            color: #807e7e;
+            width: 100%;
+            opacity: 0.25;
+            margin: 65px 0 65px;
+        }
+
+        .woomen__list {
+            display: flex;
+            justify-content: center;
+
+            .woomen__item {
+                display: flex;
+                margin: 0 20px 0 0;
+
+                @include tablet-mid-width {
+                    margin: 0 10px 0 0;
+                }
+
+                .woomen__title {
+
+                    color: #6F6E6E;
+                    text-transform: uppercase;
+
+                    @include mobile-mid {
+                        @include font(10px, 12px, 400);
+                    }
+                }
+
+                .woomen__btn {
+                    border: none;
+                    background: transparent;
+                }
+
+
+            }
+        }
+
+        .woomen__btn-add {
+            display: flex;
+            border: 1px solid $dark-pink;
+            background: transparent;
+            padding: 14px 56px 8px 23px;
+            align-items: center;
+            align-self: center;
+            margin: 48px auto 65px;
+
+            .woomen__btn-add-icon {
+                fill: $dark-pink;
+                margin: 0 22px 0 0;
+            }
+
+            .woomen__btn-add-title {
+                @include font(14px, 17px, 400px);
+                color: $dark-pink;
+            }
+        }
     }
 
-    .woomen__title-pink {
-        @include font(14px, 17px, 300px);
-        color: $dark-pink;
-        text-transform: uppercase;
-    }
 
-    .woomen__title-black {
-        @include font(18px, 22px, 300px);
-        color: #4D4D4D;
-        text-transform: uppercase;
-    }
-
-    .woomen__text {
-        @include font(14px, 17px, 300px);
-        color: #5E5E5E;
-        width: 34.7%;
-        text-align: center;
-    }
 
 }
