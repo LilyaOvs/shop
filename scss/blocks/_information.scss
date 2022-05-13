@@ -23,6 +23,7 @@
         align-items: center;
         width: 31.6%;
         max-width: 360px;
+        padding: 0 4px 0;
 
         @include mobile {
             width: 46.9%;

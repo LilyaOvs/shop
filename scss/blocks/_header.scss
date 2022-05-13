@@ -70,18 +70,55 @@
         display: none;
         position: absolute;
         width: 232px;
-        top: 100px;
+        top: 75px;
         right: 0;
-        background: white;
+        background-color: white;
+        padding: 37px 0 37px 34px;
+        z-index: 2;
     }
 
-    .header__botton:hover+.header__nav,
-    .header__botton:focus+.header__nav {
+    .header__burger:hover+.header__nav,
+    .header__burger:focus+.header__nav {
         display: block;
     }
 
     .header__nav:hover {
         display: block;
+    }
+
+    .header__nav-title {
+        @include font(14px, 17px, 700px);
+        color: #000000;
+        text-transform: uppercase;
+        margin: 0 0 4px;
+    }
+
+    .header__nav-item {
+        margin: 20px 0 0;
+    }
+
+    .nav-sub-item {
+        .nav-sub-item__title {
+            @include font(14px, 17px, 400px);
+            color: $dark-pink;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .nav-sub-item__list {
+            padding: 0 0 0 21px;
+        }
+
+        .nav-sub-item__item {
+            margin: 12px 0 0;
+        }
+
+        .nav-sub-item__link {
+            @include font(14px, 17px, 400px);
+            color: #6F6E6E;
+            text-transform: capitalize;
+            text-decoration: none;
+        }
     }
 }
 

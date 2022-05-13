@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400&display=swap"
-        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
 </head>
 
 <body>
@@ -127,158 +127,102 @@
 
         </div>
     </header>
-    <main>
-        <section class="brand">
-            <img class="brand__img" src="img/man.jpg" alt="man">
-            <div class="brand__title-wrp">
-                <h1 class="brand__title">the brand
-                    <span class="brand__subtitle">of luxerious <span class="brand__subtitle-pink">fashion</span> </span>
-                </h1>
+    <section class="product-title">
+        <div class="container product-title-wrp">
+            <h1 class="product-title__title">new arrivals</h1>
+            <ul class="product-title__list">
+                <li class="product-title__item">
+                    <a class="product-title__link" href="#"> home / </a>
+                </li>
+                <li class="product-title__item">
+                    <a class="product-title__link" href="#"> men / <span class="product-title__link-pink"> new arrivals
+                        </span></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/carousel.jpg" class="d-block w-100 slide__img" alt="capsule">
             </div>
-        </section>
-        <section class="sales">
-            <div class="container">
-                <h2 class="visually-hidden">sales</h2>
-                <ul class="sales__list">
-                    <li class="sales__item sales__item--women">
-                        <p class="sales__item-text">30% off</p>
-                        <p class="sales__item-text-pink">for women</p>
-                    </li>
-                    <li class="sales__item sales__item--men">
-                        <p class="sales__item-text">hot deal</p>
-                        <p class="sales__item-text-pink">for men</p>
-                    </li>
-                    <li class="sales__item sales__item--kids">
-                        <p class="sales__item-text">new arrivals</p>
-                        <p class="sales__item-text-pink">for kids</p>
-                    </li>
-                    <li class="sales__item sales__item--shoes">
-                        <p class="sales__item-text--shoes">luxirous & trendy</p>
-                        <p class="sales__item-text-pink">accesories</p>
-                    </li>
-                </ul>
+            <div class="carousel-item">
+                <img src="img/carousel.jpg" class="d-block w-100 slide__img" alt="carousel">
             </div>
-        </section>
-        <section class="catalog">
-            <div class="container">
-                <h2 class="catalog__title">fetured items</h2>
-                <p class="catalog__text">Shop for items based on what we featured in this week</p>
-                <ul class="catalog__list">
-                    <li class="catalog__item">
-                        <div class="catalog__item-overlay-button">
-                            <img class="catalog__item-img" src="img/product-1.jpg" alt="product-1">
-                            <div class="catalog__item-overlay"></div>
-                            <button class="catalog__item-button"><img class="catalog__item-button-img"
-                                    src="img/add-to-cart.svg" alt="add-to-cart"> Add
-                                to Cart</button>
-                        </div>
-                        <h3 class="catalog__item-title">ellery x m'o capsule</h3>
-                        <p class="catalog__item-text">Known for her sculptural takes on traditional tailoring,
-                            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="catalog__item-text-price">$52.00</p>
-                    </li>
-                    <li class="catalog__item">
-                        <div class="catalog__item-overlay-button">
-                            <img class="catalog__item-img" src="img/product-2.jpg" alt="product-1">
-                            <div class="catalog__item-overlay"></div>
-                            <button class="catalog__item-button"><img class="catalog__item-button-img"
-                                    src="img/add-to-cart.svg" alt="add-to-cart"> Add
-                                to Cart</button>
-                        </div>
-                        <h3 class="catalog__item-title">ellery x m'o capsule</h3>
-                        <p class="catalog__item-text">Known for her sculptural takes on traditional tailoring,
-                            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="catalog__item-text-price">$52.00</p>
-                    </li>
-                    <li class="catalog__item">
-                        <div class="catalog__item-overlay-button">
-                            <img class="catalog__item-img" src="img/product-3.jpg" alt="product-1">
-                            <div class="catalog__item-overlay"></div>
-                            <button class="catalog__item-button"><img class="catalog__item-button-img"
-                                    src="img/add-to-cart.svg" alt="add-to-cart"> Add
-                                to Cart</button>
-                        </div>
-                        <h3 class="catalog__item-title">ellery x m'o capsule</h3>
-                        <p class="catalog__item-text">Known for her sculptural takes on traditional tailoring,
-                            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="catalog__item-text-price">$52.00</p>
-                    <li class="catalog__item">
-                        <div class="catalog__item-overlay-button">
-                            <img class="catalog__item-img" src="img/product-4.jpg" alt="product-1">
-                            <div class="catalog__item-overlay"></div>
-                            <button class="catalog__item-button"><img class="catalog__item-button-img"
-                                    src="img/add-to-cart.svg" alt="add-to-cart"> Add
-                                to Cart</button>
-                        </div>
-                        <h3 class="catalog__item-title">ellery x m'o capsule</h3>
-                        <p class="catalog__item-text">Known for her sculptural takes on traditional tailoring,
-                            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="catalog__item-text-price">$52.00</p>
-                    </li>
-                    <li class="catalog__item">
-                        <div class="catalog__item-overlay-button">
-                            <img class="catalog__item-img" src="img/product-5.jpg" alt="product-1">
-                            <div class="catalog__item-overlay"></div>
-                            <button class="catalog__item-button"><img class="catalog__item-button-img"
-                                    src="img/add-to-cart.svg" alt="add-to-cart"> Add
-                                to Cart</button>
-                        </div>
-                        <h3 class="catalog__item-title">ellery x m'o capsule</h3>
-                        <p class="catalog__item-text">Known for her sculptural takes on traditional tailoring,
-                            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="catalog__item-text-price">$52.00</p>
-                    </li>
-                    <li class="catalog__item">
-                        <div class="catalog__item-overlay-button">
-                            <img class="catalog__item-img" src="img/product-6.jpg" alt="product-1">
-                            <div class="catalog__item-overlay"></div>
-                            <button class="catalog__item-button"><img class="catalog__item-button-img"
-                                    src="img/add-to-cart.svg" alt="add-to-cart"> Add
-                                to Cart</button>
-                        </div>
-                        <h3 class="catalog__item-title">ellery x m'o capsule</h3>
-                        <p class="catalog__item-text">Known for her sculptural takes on traditional tailoring,
-                            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="catalog__item-text-price">$52.00</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="catalog__link">
-                <a class="catalog__link-button" href="#">browse All Product</a>
-            </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="information">
-            <div class="container">
-                <ul class="information__list">
-                    <li class="information__item">
-                        <img class="information__item-img" src="img/car.svg" alt="car">
-                        <h2 class="information__item-title">Free Delivery</h2>
-                        <p class="information__item-text">Worldwide delivery on all. Authorit tively morph
-                            next-generation
-                            innov tion with extensive models.
-                        </p>
-                    </li>
-                    <li class="information__item">
-                        <img class="information__item-img" src="img/sentio.svg" alt="sentio">
-                        <h2 class="information__item-title">Sales & discounts</h2>
-                        <p class="information__item-text">Worldwide delivery on all. Authorit tively morph
-                            next-generation innov tion with extensive models.
-                        </p>
-                    </li>
-                    <li class="information__item">
-                        <img class="information__item-img" src="img/corona.svg" alt="corona">
-                        <h2 class="information__item-title">Quality assurance</h2>
-                        <p class="information__item-text">Worldwide delivery on all. Authorit tively morph
-                            next-generation innov tion
-                            with extensive models.
-                        </p>
-                    </li>
-                </ul>
+            <div class="carousel-item">
+                <img src="img/carousel.jpg" class="d-block w-100 slide__img" alt="carousel">
             </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <section class="woomen">
+        <div class="container woomen-wrp">
+            <h2 class="woomen__title-pink">women collection</h2>
+            <h3 class="woomen__title-black">moschino cheap and chic</h3>
+            <p class="woomen__text">Compellingly actualize fully researched processes before proactive outsourcing.
+                Progressively syndicate
+                collaborative architectures before cutting-edge services. Completely visualize parallel core
+                competencies
+                rather than exceptional portals. </p>
+            <p class="woomen__text-pink">$561</p>
+        </div>
+    </section>
+    <section class="catalog">
+        <div class="container">
+            <h2 class="catalog__title">fetured items</h2>
+            <p class="catalog__text">Shop for items based on what we featured in this week</p>
+            <ul class="catalog__list">
+                <li class="catalog__item">
+                    <div class="catalog__item-overlay-button">
+                        <img class="catalog__item-img" src="img/product-3.jpg" alt="product-1">
+                        <div class="catalog__item-overlay"></div>
+                        <button class="catalog__item-button"><img class="catalog__item-button-img"
+                                src="img/add-to-cart.svg" alt="add-to-cart"> Add
+                            to Cart</button>
+                    </div>
+                    <h3 class="catalog__item-title">ellery x m'o capsule</h3>
+                    <p class="catalog__item-text">Known for her sculptural takes on traditional tailoring,
+                        Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="catalog__item-text-price">$52.00</p>
+                <li class="catalog__item">
+                    <div class="catalog__item-overlay-button">
+                        <img class="catalog__item-img" src="img/product-4.jpg" alt="product-1">
+                        <div class="catalog__item-overlay"></div>
+                        <button class="catalog__item-button"><img class="catalog__item-button-img"
+                                src="img/add-to-cart.svg" alt="add-to-cart"> Add
+                            to Cart</button>
+                    </div>
+                    <h3 class="catalog__item-title">ellery x m'o capsule</h3>
+                    <p class="catalog__item-text">Known for her sculptural takes on traditional tailoring,
+                        Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="catalog__item-text-price">$52.00</p>
+                </li>
+                <li class="catalog__item">
+                    <div class="catalog__item-overlay-button">
+                        <img class="catalog__item-img" src="img/product-6.jpg" alt="product-1">
+                        <div class="catalog__item-overlay"></div>
+                        <button class="catalog__item-button"><img class="catalog__item-button-img"
+                                src="img/add-to-cart.svg" alt="add-to-cart"> Add
+                            to Cart</button>
+                    </div>
+                    <h3 class="catalog__item-title">ellery x m'o capsule</h3>
+                    <p class="catalog__item-text">Known for her sculptural takes on traditional tailoring,
+                        Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="catalog__item-text-price">$52.00</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
         <div class="connect">
             <div class="container connect__wrp">
                 <div class="connect__bloc">
@@ -327,6 +271,11 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+
+
 </body>
 
 </html>
